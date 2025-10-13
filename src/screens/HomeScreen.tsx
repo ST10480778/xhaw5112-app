@@ -32,6 +32,7 @@ const HomeScreen: React.FC<{ navigation: DrawerNavigationProps }> = ({ navigatio
 
   return (
     <ImageBackground source={images.background} resizeMode="cover" style={CommonStyles.imageBackgroundContainer}>
+      <View style={CommonStyles.overlay}> 
       <ScrollView contentContainerStyle={CommonStyles.scrollContent}>
         <View style={CommonStyles.container}>
           <Image source={images.logo} style={CommonStyles.logo} />
@@ -77,6 +78,7 @@ const HomeScreen: React.FC<{ navigation: DrawerNavigationProps }> = ({ navigatio
           </TouchableOpacity>
         </View>
       </ScrollView>
+      </View>
     </ImageBackground>
   );
 };

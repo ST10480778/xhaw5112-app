@@ -10,6 +10,7 @@ import{Colors} from "../../theme/Colors";
 const AboutUsScreen: React.FC = () => {
   return (
     <ImageBackground source={images.background} resizeMode="cover" style={CommonStyles.imageBackgroundContainer}>
+      <View style={CommonStyles.overlay}> 
       <ScrollView contentContainerStyle={CommonStyles.scrollContent}>
         <View style={CommonStyles.container}>
           <Text style={CommonStyles.title}>About Empowering The Nation</Text>
@@ -31,7 +32,7 @@ const AboutUsScreen: React.FC = () => {
             <Ionicons name="school-outline" size={24} color={Colors.primary} style={{ marginRight: 10 }} />
             <View style={{ flex: 1 }}>
               <Text style={[CommonStyles.text, { fontWeight: "600" }]}>Fully Accredited</Text>
-              <Text style={CommonStyles.text}>All our courses are regulated by recognized UK awarding bodies.</Text>
+              <Text style={CommonStyles.text}>All our courses are industry relevenat and promote self employment.</Text>
             </View>
           </View>
 
@@ -39,7 +40,7 @@ const AboutUsScreen: React.FC = () => {
             <Ionicons name="people-outline" size={24} color={Colors.primary} style={{ marginRight: 10 }} />
             <View style={{ flex: 1 }}>
               <Text style={[CommonStyles.text, { fontWeight: "600" }]}>Industry Expertise</Text>
-              <Text style={CommonStyles.text}>Our tutors are industry professionals with real-world experience.</Text>
+              <Text style={CommonStyles.text}>Our tutors are certified professionals with real-world experience.</Text>
             </View>
           </View>
 
@@ -60,6 +61,7 @@ const AboutUsScreen: React.FC = () => {
           </Text>
         </View>
       </ScrollView>
+      </View>
     </ImageBackground>
   );
 };

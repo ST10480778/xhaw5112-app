@@ -9,6 +9,10 @@ export const CommonStyles = StyleSheet.create({
     flex: 1,
     width: "100%",
   },
+  overlay: {
+    ...StyleSheet.absoluteFillObject, 
+    backgroundColor: 'rgba(234, 226, 226, 0.67)', // Adjust 0.5 for desired darkness
+  },
   scrollContent: {
     flexGrow: 1,
     paddingVertical: 20,
@@ -40,7 +44,7 @@ export const CommonStyles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: Colors.secondartText,
+    color: Colors.text,
     lineHeight: 24,
     marginBottom: 10,
   },
@@ -74,6 +78,109 @@ export const CommonStyles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
   },
+  addressSection: {
+    width: '100%',
+    alignItems: 'center',
+    marginBottom: 0, // Removed extra padding as it's in the text below
+  },
+  contactIcon: {
+    alignSelf: 'center',
+    marginBottom: 20,
+  },
+
+  buttonContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center', // Ensures content is centered in the button
+  },
+
+  buttonIcon: {
+    marginRight: 10, // Consistent spacing between icon and text
+  },
+  
+  helperText: {
+    fontSize: 16,
+    color: Colors.text,
+    textAlign: 'center',
+    marginBottom: 20, // Consistent bottom margin for helper texts
+    lineHeight: 24,
+  },
+
+  // FAQ styles
+  infoText: {
+    fontSize: 16,
+    color: Colors.text,
+    textAlign: "center",
+    marginBottom: 10,
+    marginTop: 10,
+  },
+  faqButton: {
+    backgroundColor: Colors.secondary,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 8,
+    marginBottom: 20,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  faqText: {
+    color: Colors.background,
+    fontWeight: "bold",
+    fontSize: 16,
+  },
+  // Operating Hours styles
+  hoursTitle: {
+    fontSize: 20, 
+    fontWeight: '600',
+    color: Colors.text, // Assuming subtitle uses a standard text color
+    
+    marginTop: 20,
+    marginBottom: 5,
+    
+  },
+  hoursText: {
+    fontSize: 16,
+    color: Colors.text, 
+    
+    marginVertical: 2,
+  },
+  // Social Media Footer styles
+  socialSection: {
+    marginTop: 30,
+    paddingTop: 15,
+    borderTopWidth: 1,
+    borderTopColor: Colors.aboutBackground,
+    width: '100%',
+    alignItems: 'center',
+  },
+  footerText: {
+    fontSize: 16,
+    color: Colors.text,
+    marginBottom: 10,
+    fontWeight: '600',
+  },
+  socialRow: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 15, // Use gap for spacing between buttons
+  },
+  socialButton: {
+    backgroundColor: Colors.primary,
+    borderRadius: 50,
+    padding: 10,
+    width: 44, 
+    height: 44,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.2,
+    shadowRadius: 1.41,
+    elevation: 2,
+  }
 });
 
 // 2. App Root Styles (For App.tsx ImageBackground)
@@ -305,4 +412,77 @@ export const faqStyles = StyleSheet.create({
     color: Colors.text,
     lineHeight: 24,
   },
+});
+
+export const dashboardStyles = StyleSheet.create({
+  dashboardSection: {
+    paddingVertical: 15,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.aboutBackground,
+    width: '100%',
+  },
+  // Progress Bar Styles
+  progressBarContainer: {
+    width: '100%',
+    marginBottom: 10,
+  },
+  progressLabel: {
+    fontSize: 16,
+    color: Colors.text,
+    marginBottom: 5,
+    fontWeight: '500',
+  },
+  progressBarTrack: {
+    height: 12,
+    width: '100%',
+    backgroundColor: Colors.aboutBackground,
+    borderRadius: 6,
+    overflow: 'hidden',
+  },
+  progressBarFill: {
+    height: '100%',
+    backgroundColor: Colors.secondary,
+    borderRadius: 6,
+  },
+  // Enrolled Courses Styles
+  courseCard: {
+    backgroundColor: Colors.background,
+    padding: 15,
+    borderRadius: 8,
+    marginBottom: 10,
+    borderWidth: 1,
+    borderColor: Colors.aboutBackground,
+  },
+  courseTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: Colors.primary,
+    marginBottom: 5,
+  },
+  courseDetails: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  courseText: {
+    fontSize: 14,
+    color: Colors.text,
+  },
+  emptyState: {
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: Colors.aboutBackground,
+    borderRadius: 8,
+  },
+  enrollButton: {
+    marginTop: 15,
+    backgroundColor: Colors.primary,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 5,
+  },
+  enrollButtonText: {
+    color: Colors.background,
+    fontWeight: 'bold',
+  }
 });

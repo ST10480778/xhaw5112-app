@@ -5,7 +5,7 @@ export const Colors = { // <-- EXPORTED
   error: "#E74C3C", // Red
   primary: "#006600", // Dark Green from --brand-dark-green
   secondary: "#4CAF50", // Accent Green from (Buttons/Active)
-  text: "#333333", // Dark text 
+  text: "#000000ff", // Dark text 
   secondartText:"#ffff",
   placeholder: "#999999",
   contactButton: "#4CAF50", 

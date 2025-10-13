@@ -27,6 +27,7 @@ const CourseDetailScreen: React.FC<CourseDetailScreenProps> = ({ route, navigati
 
   return (
     <ImageBackground source={images.background} resizeMode="cover" style={CommonStyles.imageBackgroundContainer}>
+      <View style={CommonStyles.overlay}> 
       <ScrollView contentContainerStyle={CommonStyles.scrollContent}>
         <View style={CommonStyles.container}>
           <Image source={course.image || images.logo} style={detailStyles.detailImage} />
@@ -58,6 +59,7 @@ const CourseDetailScreen: React.FC<CourseDetailScreenProps> = ({ route, navigati
           </TouchableOpacity>
         </View>
       </ScrollView>
+      </View>
     </ImageBackground>
   );
 };

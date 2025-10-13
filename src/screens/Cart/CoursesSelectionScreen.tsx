@@ -22,6 +22,7 @@ const CourseSelectionScreen: React.FC<CourseSelectionScreenProps> = ({ navigatio
 
   return (
     <ImageBackground source={images.background} resizeMode="cover" style={CommonStyles.imageBackgroundContainer}>
+      
       <ScrollView contentContainerStyle={CommonStyles.scrollContent}>
         <View style={CommonStyles.container}>
           <Text style={cartStyles.sectionTitle}>Your Selected Courses ({cart.length})</Text>
@@ -33,7 +34,7 @@ const CourseSelectionScreen: React.FC<CourseSelectionScreenProps> = ({ navigatio
               {cart.map((course) => (
                 <View key={course.id} style={cartStyles.cartItem}>
                   <Text style={cartStyles.cartItemTitle}>{course.title}</Text>
-                  <Text style={cartStyles.cartItemPrice}>£{course.price.toFixed(2)}</Text>
+                  <Text style={cartStyles.cartItemPrice}>R{course.price.toFixed(2)}</Text>
                   <TouchableOpacity style={cartStyles.removeButton} onPress={() => removeFromCart(course.id)}>
                     <Ionicons name="trash-outline" size={22} color={Colors.error} />
                   </TouchableOpacity>
@@ -46,19 +47,19 @@ const CourseSelectionScreen: React.FC<CourseSelectionScreenProps> = ({ navigatio
           <View style={cartStyles.summaryCard}>
             <View style={cartStyles.costRow}>
               <Text style={cartStyles.costLabel}>Subtotal</Text>
-              <Text style={cartStyles.costValue}>£{subtotal.toFixed(2)}</Text>
+              <Text style={cartStyles.costValue}>R{subtotal.toFixed(2)}</Text>
             </View>
             <View style={cartStyles.costRow}>
               <Text style={cartStyles.costLabel}>Multi-Course Discount ({cart.length})</Text>
-              <Text style={[cartStyles.costValue, { color: Colors.accent }]}>- £{discount.toFixed(2)}</Text>
+              <Text style={[cartStyles.costValue, { color: Colors.accent }]}>- R{discount.toFixed(2)}</Text>
             </View>
             <View style={cartStyles.costRow}>
               <Text style={cartStyles.costLabel}>VAT (15%)</Text>
-              <Text style={cartStyles.costValue}>+ £{vat.toFixed(2)}</Text>
+              <Text style={cartStyles.costValue}>+ R{vat.toFixed(2)}</Text>
             </View>
             <View style={cartStyles.totalRow}>
               <Text style={cartStyles.totalLabel}>Grand Total</Text>
-              <Text style={cartStyles.totalValue}>£{total.toFixed(2)}</Text>
+              <Text style={cartStyles.totalValue}>R{total.toFixed(2)}</Text>
             </View>
           </View>
 
@@ -70,6 +71,7 @@ const CourseSelectionScreen: React.FC<CourseSelectionScreenProps> = ({ navigatio
           </TouchableOpacity>
         </View>
       </ScrollView>
+      
     </ImageBackground>
   );
 };

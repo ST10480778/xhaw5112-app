@@ -28,6 +28,7 @@ const CoursesListScreen: React.FC<CoursesListScreenProps> = ({ navigation }) => 
 
   return (
     <ImageBackground source={images.background} resizeMode="cover" style={CommonStyles.imageBackgroundContainer}>
+      <View style={CommonStyles.overlay}> 
       <FlatList
         data={allCourses}
         renderItem={renderCourseItem}
@@ -46,6 +47,7 @@ const CoursesListScreen: React.FC<CoursesListScreenProps> = ({ navigation }) => 
           </View>
         )}
       />
+      </View>
     </ImageBackground>
   );
 };

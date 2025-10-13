@@ -17,7 +17,7 @@ const HomeCourseCard: React.FC<HomeCourseCardProps> = ({ course, onPress }) => {
       <Image source={course.image} style={cardStyles.cardImage} />
       <View style={cardStyles.cardContent}>
         <Text style={cardStyles.cardTitle}>{course.title}</Text>
-        <Text style={cardStyles.cardPrice}>£{course.price.toFixed(2)}</Text>
+        <Text style={cardStyles.cardPrice}>R{course.price.toFixed(2)}</Text>
       </View>
     </TouchableOpacity>
   );
