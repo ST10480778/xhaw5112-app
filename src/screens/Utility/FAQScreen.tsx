@@ -3,7 +3,7 @@ import { ScrollView, View, Text, ImageBackground } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 // Local imports
-import { faqData } from "../../data";
+import { faqData } from "../../data/";
 import images from "../../assets/images";
 import { CommonStyles, faqStyles } from "../../theme/Styles";
 import {Colors } from "../../theme/Colors";
@@ -18,10 +18,9 @@ const FAQScreen: React.FC = () => {
           <Text style={[CommonStyles.text, { textAlign: "center", marginBottom: 20 }]}>
             Find quick answers to the most common questions about our courses, payment, and accreditation.
           </Text>
-
-          {faqData.map((item) => (
-            <AccordionItem key={item.id} title={item.question} content={item.answer} />
-          ))}
+              {faqData.map((item, index) => (
+            <AccordionItem key={index} title={item.title} content={item.content} />
+        ))}
 
           <View style={{ marginTop: 20, padding: 15, backgroundColor: Colors.aboutBackground, borderRadius: 8 }}>
             <View style={faqStyles.cardHeader}>

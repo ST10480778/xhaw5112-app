@@ -4,6 +4,7 @@ import { TouchableOpacity, Text, Image, View } from "react-native";
 // Local imports
 import { CourseItem } from "../types";
 import { cardStyles } from "../theme/Styles";
+import {allCourses} from "../data/index";
 
 interface HomeCourseCardProps {
   course: CourseItem;

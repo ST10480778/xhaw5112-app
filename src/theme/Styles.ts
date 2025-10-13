@@ -40,7 +40,7 @@ export const CommonStyles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: Colors.text,
+    color: Colors.secondartText,
     lineHeight: 24,
     marginBottom: 10,
   },

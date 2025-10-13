@@ -1,11 +1,15 @@
 // src/theme/Colors.ts
 export const Colors = { // <-- EXPORTED
-  primary: "#1A5276", // Dark Blue
-  secondary: "#A9CCE3", // Light Blue
   background: "#FFFFFF", // White
-  text: "#34495E", // Dark Gray/Blue
-  placeholder: "#7F8C8D", // Medium Gray
   accent: "#2ECC71", // Green (for success/buttons)
   error: "#E74C3C", // Red
-  aboutBackground: "#F2F3F4", // Light Off-White
+  primary: "#006600", // Dark Green from --brand-dark-green
+  secondary: "#4CAF50", // Accent Green from (Buttons/Active)
+  text: "#333333", // Dark text 
+  secondartText:"#ffff",
+  placeholder: "#999999",
+  contactButton: "#4CAF50", 
+  cardBackground: "#FFFFFF", 
+  aboutBackground: "#f4f6f9", // Light grey 
+  screenBackground: "#f4f6f9", // Light grey from --bg-light-gray (Matching CSS body background of website)
 };

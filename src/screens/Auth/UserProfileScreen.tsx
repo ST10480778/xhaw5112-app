@@ -32,6 +32,7 @@ const UserProfileScreen: React.FC<UserProfileScreenProps> = ({ navigation }) => 
       index: 0,
       routes: [{ name: "Home" }],
     });
+      };
   const menuItems = [
     { icon: "bookmarks-outline", text: "My Enrolled Courses", screen: "Dashboard" },
     { icon: "calculator-outline", text: "View Quotes/Invoices", screen: "Dashboard" }, // Mock screen
