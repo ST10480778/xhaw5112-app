@@ -60,7 +60,7 @@ The core business logic for the quote calculation is as follows:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone [[https://github.com/your-username/xhaw5112-app.git](https://github.com/ST10480778/xhaw5112-app.git)](https://github.com/ST10480778/xhaw5112-app.git)
     cd your-repo-name
     ```
 
